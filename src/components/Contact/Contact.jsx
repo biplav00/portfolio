@@ -10,9 +10,9 @@ import "./Contact.scss";
 
 const Contact = () => {
   const form = useRef();
-  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const tempId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
+  const tempId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
