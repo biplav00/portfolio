@@ -10,17 +10,16 @@ import "./Contact.scss";
 
 const Contact = () => {
   const form = useRef();
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const tempId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(import.meta.env);
 
     emailjs
-      .sendForm(
-        "service_z8uboif",
-        "template_cmrvk63",
-        form.current,
-        "gdnSEmL2OE5A3GCjc"
-      )
+      .sendForm(`${serviceId}`, `${tempId}`, form.current, `${publicKey}`)
       .then(
         (result) => {
           console.log(result.text);
