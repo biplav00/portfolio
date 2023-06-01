@@ -18,7 +18,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(import.meta.env);
 
     emailjs
       .sendForm(`${serviceId}`, `${tempId}`, form.current, `${publicKey}`)
