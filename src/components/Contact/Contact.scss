@@ -237,6 +237,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem !important;
+  }
+}
+
 @media (max-width: 600px) {
   .contact-title {
     font-size: 2rem !important;
@@ -259,11 +265,5 @@
     span {
       rotate: 0deg !important;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-title {
-    font-size: 2rem !important;
   }
 }
