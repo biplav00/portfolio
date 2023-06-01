@@ -1,7 +1,7 @@
 .project-container {
   height: 100%;
   width: 100%;
-
+  position: relative;
   background-color: #000000;
 
   padding: 1rem;
@@ -16,13 +16,15 @@
     right: 1rem;
     height: 100%;
   }
-  h1 {
+  .p-title {
     color: white;
     padding: 0.7rem 1.5rem;
     border-bottom: 1px solid white;
+    margin-bottom: 1rem;
   }
 
   .project-slider {
+    position: relative;
     .slide {
       opacity: 0;
       transition-duration: 1s ease;
@@ -43,12 +45,20 @@
     .card-text {
       position: absolute;
       bottom: 1rem;
+      color: #ffffff;
+      padding-left: 1rem;
+
+      .c-title {
+        font-size: 1.5rem;
+      }
     }
   }
 
   .project-controls {
+    position: absolute;
     display: flex;
-    gap: 1rem;
+    gap: 65rem;
+    top: 50%;
 
     .right-arrow,
     .left-arrow {
@@ -57,5 +67,82 @@
       cursor: pointer;
       user-select: none;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .b-img {
+    display: none;
+  }
+
+  .project-controls {
+    gap: 2rem !important;
+    top: 40rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-img {
+    display: none;
+  }
+
+  .p-title {
+    font-size: 2rem !important;
+  }
+
+  .image {
+    height: 25rem !important;
+  }
+
+  .card-text {
+    bottom: 1rem !important;
+    color: #ffffff !important;
+    padding-left: 1rem;
+
+    .c-title {
+      font-size: 0.9rem !important;
+    }
+
+    .c-desc {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .project-controls {
+    gap: 2rem !important;
+    top: 35rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-img {
+    display: none;
+  }
+
+  .p-title {
+    font-size: 2rem !important;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .card-text {
+    bottom: 9rem !important;
+    color: #ffffff !important;
+    padding-left: 1rem;
+
+    .c-title {
+      font-size: 0.9rem !important;
+    }
+
+    .c-desc {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .project-controls {
+    gap: 2rem !important;
+    top: 80% !important;
   }
 }

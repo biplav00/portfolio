@@ -21,7 +21,7 @@ const Project = () => {
   return (
     <section className=" project-container">
       <img src="/background-images/sk-2.png" alt="" className="b-img" />
-      <h1>Projects</h1>
+      <h1 className="p-title">Projects</h1>
       <div className="project-slider">
         {data.map((slide, index) => {
           return (
@@ -33,8 +33,8 @@ const Project = () => {
                 <>
                   <img src={slide.image} alt="travel image" className="image" />
                   <div className="card-text">
-                    <h1>{slide.name}</h1>
-                    <h3>{slide.detail}</h3>
+                    <h1 className="c-title">{slide.name}</h1>
+                    <p className="c-desc">{slide.detail}</p>
                   </div>
                 </>
               )}
