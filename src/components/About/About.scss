@@ -57,31 +57,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .about-container {
-    overflow: hidden;
-    .about-card {
-      gap: 1rem;
-
-      h1 {
-        font-size: 2rem !important;
-      }
-
-      .about-me {
-        gap: 1rem;
-        .my-photo {
-          height: 12rem !important;
-        }
-
-        .my-info {
-          width: 15rem !important;
-          font-size: 0.95rem !important;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 768px) {
   .about-container {
     overflow: hidden;
@@ -95,6 +70,31 @@
 
       .about-me {
         gap: 3rem;
+        .my-photo {
+          height: 12rem !important;
+        }
+
+        .my-info {
+          width: 15rem !important;
+          font-size: 0.95rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    overflow: hidden;
+    .about-card {
+      gap: 1rem;
+
+      h1 {
+        font-size: 2rem !important;
+      }
+
+      .about-me {
+        gap: 1rem;
         .my-photo {
           height: 12rem !important;
         }
